@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> tableform</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <table>
+            <form>
+            <thead class-="tr1">
+               <tr >
+                  <th  colspan="3"><h1>Welcome to the Event</h1></th>
+               </tr>
+               <tr >
+                  <th colspan="3"><h2>Login</h2></th>
+               </tr>
+            </thead>
+            <tbody>
+                <tr>
+                   <td>
+                      <div class="username">
+                      <label for="username">Username</label></div>
+                   </td>
+                   <td>
+                    <input id="username" type="text" value= "" name="usename" required minlength="6" maxlength="8" pattern="[a-zA-Z0-9]">   
+                   </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="password" for="password">password</label>
+                    </td>
+                    <td>
+                        <input id="password" type="text" value="*****" name="password" required minlength="6" maxlength="8" pattern="[a-zA-Z0-9]">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <br><div >
+                        <input class="submit" type="submit" value="submit"/></div>
+                    </td>
+                </tr>
+                <tr class="name">
+                    <td colspan="3">
+                            <h3>Please fill the form to Register</h3>
+                    </td>
+                </tr>
+                <tr class="name">
+                    <td>
+                        <label for="Name">Name</label>
+                    </td>
+                    <td>
+                        <input class="inputname" id="Name" type="text" value="" name="Name" required minlength="4" maxlength="10" pattern="[a-zA-Z]">
+                    </td>
+                </tr>
+                <tr class="name">
+                    <td>
+                        <label for="surname">Surame</label>
+                    </td>
+                    <td>
+                        <input id="surname" type="text" value="" name="surname" required minlength="4" maxlength="10" pattern="[a-zA-Z] ">
+                    </td>
+                
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="attend">
+                            <h3>Are you attending this event?</h3></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="yes" type="radio" value="Yes" name="answer"  required>
+            <label for="yes">Yes</label>
+            <input id= "No" type="radio" value="No" name="answer" required>
+            <label for="No">No</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="count">
+                            <h3>How many people you want to register?</h3></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="attendies">Number of People</label>
+                    </td>
+                    <td>
+                        <input id="attendies" type="number" value="amount" name="amount" step="1" required min="1" max="4" >
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="session">
+                            <h3>Prebook your sessions</h3></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                            <input id="timeslot" type="checkbox" value="time" name="time"  required>
+                            <label for="timeslot">11:00 am</label>
+                            <input id="timeslot2" type="checkbox" value="time" name="time"  required>
+                            <label for="timeslot2">11:30 am</label></div>
+                    </td>
+                </tr>
+                <tr> 
+                    <td>
+                        <input id="timeslot" type="checkbox" value="time" name="time"  required>
+                        <label for="timeslot3">12:00 am</label>
+                        <input id="timeslot4" type="checkbox" value="time" name="time"  required>
+                        <label for="timeslot4">12:30 am</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="rating">
+                            <h3>How likey will you recommend this Event to others?</h3></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Ratings">Not likely</label>
+            <input id="Ratings" type="range" value="rating" name="rating" step="1" required min="1" max="10" required>
+            <label for="Ratings">very much likely</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="location">
+                            <h3>What is your preferred Location</h3></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="location">Cities</label>
+                        <select id="location" value="cities" type="dropdown" name="cities" required>
+                        <option value="Auckland">Auckland</option>
+                        <option value="Wellington">Wellington</option>
+                        <option value="Hamilton">Hamilton</option>
+                        <option value="Christchurch">Christchurch</option>
+                        <option value="Dunedin">Dunedin</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div class="year">
+                            <h3>When did you attend this event last time?</h3></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="year">Year</label>
+                  <input id="year" type="text" list="years" name="year">
+                  <datalist value="year" id="years">
+                  <option value="2021"></option>
+                  <option value="2020"></option>
+                  <option value="2019"></option>
+                  <option value="2018"></option>
+                  <option value="2017"></option>
+                  <option value="2016"></option>
+                  <option value="2015"></option>
+                  <option value="2014"></option>
+                  <option value="2013"></option>
+                  <option value="2012"></option>
+                  <option value="2011"></option>
+                  <option value="2010"></option>
+                  <option value="2009"></option>
+                  <option value="2008"></option>
+                  <option value="2007"></option>
+                  <option value="2006"></option>
+                  <option value="2005"></option>
+                  <option value="2004"></option>
+                  <option value="2003"></option>
+                </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <div>
+                            <p>Additional requirements</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Additional requirement"></label>
+                        <textarea class="aside" id="Additional requirement" maxlength="250" rows="3" cols="30"> </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    
+                    <td>
+                        <br>
+                        <div>
+                            <input  class="submit2" id="submit2" type="submit">
+                        </div> 
+                    </td>
+                </tr>
+            </tbody>
+          </form>
+        </table>
+    </body>
+</html>
